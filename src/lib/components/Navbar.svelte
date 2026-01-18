@@ -31,7 +31,7 @@
       <li><a href="/contact" class="nav-link">Contact</a></li>
     </ul>
 
-    <!-- Mobile Hamburger Icon with Phone Icon -->
+    <!-- Mobile Hamburger Icon with Modern Mobile Phone Icon -->
     <button
       type="button"
       class="md:hidden flex items-center justify-center h-14 w-14 p-3 rounded-lg transition-colors duration-300 hover:bg-primary hover:text-white"
@@ -39,7 +39,7 @@
       aria-label="Toggle Menu"
       aria-expanded={menuOpen}
     >
-      <!-- Phone Icon SVG -->
+      <!-- Modern Mobile Phone Icon SVG -->
       <svg
         class="h-8 w-8 text-primary"
         fill="none"
@@ -51,7 +51,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-          d="M3 5h2l3.6 7.59-1.35 2.45a11.04 11.04 0 005.45 5.45l2.45-1.35L19 19v2a1 1 0 01-1 1h-2C7.477 22 2 16.523 2 10V8a1 1 0 011-1z"
+          d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zM12 18h.01M12 6h.01"
         ></path>
       </svg>
     </button>
