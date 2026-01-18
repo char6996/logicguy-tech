@@ -4,20 +4,20 @@
 </script>
 
 <nav class="fixed top-0 left-0 w-full bg-white border-b shadow-sm z-50">
-  <div class="container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <div class="container max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
-    <!-- Logo / Brand with Tagline -->
-    <a href="/" class="flex items-center gap-3">
+    <!-- Logo / Brand -->
+    <a href="/" class="flex items-center gap-2">
       <img
         src={Logo}
         alt="Logicguy Technologies Logo"
-        class="h-12 w-auto"
+        class="h-8 md:h-10 w-auto"
       />
       <div class="flex flex-col leading-tight">
-        <span class="text-primary font-bold text-xl">
+        <span class="text-primary font-bold text-base md:text-lg">
           Logicguy Technologies
         </span>
-        <small class="text-gray-500 text-sm">
+        <small class="text-gray-500 text-xs md:text-sm">
           Empowering Learning and Innovation
         </small>
       </div>
@@ -75,5 +75,5 @@
   {/if}
 </nav>
 
-<!-- Spacer to prevent content hiding under fixed navbar -->
-<div class="h-20"></div>
+<!-- Spacer -->
+<div class="h-16 md:h-20"></div>
