@@ -623,19 +623,19 @@ table tr:nth-child(even) {
   .footer-social { justify-content: center; }
 }
 .mobile-menu-wrapper {
-  max-height: 0;               /* Hidden by default */
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
 
-/* Optional: fade & slide each menu item */
-.mobile-menu li {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+  /* Animate mobile menu items */
+  .mobile-menu li {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
 
-.mobile-menu-wrapper[style*="max-height: 500px"] li {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .mobile-menu-wrapper[style*="max-height: 500px"] li {
+    opacity: 1;
+    transform: translateY(0);
+  }
