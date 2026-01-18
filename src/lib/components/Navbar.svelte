@@ -31,29 +31,28 @@
       <li><a href="/contact" class="nav-link">Contact</a></li>
     </ul>
 
-    <!-- Mobile Hamburger Icon with Modern Mobile Phone Icon -->
+    <!-- Mobile Hamburger Icon (Three Lines) -->
     <button
       type="button"
-      class="md:hidden flex items-center justify-center h-14 w-14 p-3 rounded-lg transition-colors duration-300 hover:bg-primary hover:text-white"
+      class="md:hidden flex flex-col justify-between h-14 w-14 p-3 rounded-lg transition-colors duration-300 hover:bg-primary hover:text-white"
       on:click={() => menuOpen = !menuOpen}
       aria-label="Toggle Menu"
       aria-expanded={menuOpen}
     >
-      <!-- Modern Mobile Phone Icon SVG -->
-      <svg
-        class="h-8 w-8 text-primary"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zM12 18h.01M12 6h.01"
-        ></path>
-      </svg>
+      <span
+        class="block h-1 w-full bg-primary rounded transition-all duration-300"
+        class:rotate-45={menuOpen}
+        class:translate-y-3={menuOpen}
+      ></span>
+      <span
+        class="block h-1 w-full bg-primary rounded transition-all duration-300"
+        class:opacity-0={menuOpen}
+      ></span>
+      <span
+        class="block h-1 w-full bg-primary rounded transition-all duration-300"
+        class:-rotate-45={menuOpen}
+        class:-translate-y-3={menuOpen}
+      ></span>
     </button>
   </div>
 
