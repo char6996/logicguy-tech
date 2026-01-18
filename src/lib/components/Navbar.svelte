@@ -3,7 +3,7 @@
   let menuOpen = false; // Mobile menu toggle
 </script>
 
-<nav class="navbar border-b">
+<nav class="navbar border-b sticky top-0 bg-white z-50">
   <div class="container flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
 
     <!-- Logo / Brand -->
@@ -28,25 +28,26 @@
 
     <!-- Mobile Hamburger -->
     <button
-      class="md:hidden flex flex-col justify-between h-12 w-12 p-2 rounded hover:bg-gray-100 transition"
+      class="md:hidden flex flex-col justify-between h-14 w-14 p-3 rounded-lg hover:bg-gray-100 transition-shadow shadow-md"
       on:click={() => menuOpen = !menuOpen}
       aria-label="Toggle Menu"
     >
       <span
-        class="block h-1.5 bg-primary rounded transition-all duration-300"
+        class="block h-2 bg-primary rounded transition-all duration-300"
         class:rotate-45={menuOpen}
-        class:translate-y-5={menuOpen}
+        class:translate-y-4={menuOpen}
       ></span>
       <span
-        class="block h-1.5 bg-primary rounded transition-all duration-300"
+        class="block h-2 bg-primary rounded transition-all duration-300"
         class:opacity-0={menuOpen}
       ></span>
       <span
-        class="block h-1.5 bg-primary rounded transition-all duration-300"
+        class="block h-2 bg-primary rounded transition-all duration-300"
         class:-rotate-45={menuOpen}
-        class:-translate-y-5={menuOpen}
+        class:-translate-y-4={menuOpen}
       ></span>
     </button>
+
   </div>
 
   <!-- Mobile Menu -->
