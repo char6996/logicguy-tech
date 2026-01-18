@@ -31,28 +31,15 @@
       <li><a href="/contact" class="nav-link">Contact</a></li>
     </ul>
 
-    <!-- Mobile Hamburger Icon (Three Lines) -->
+    <!-- Mobile Menu Button with Phone Emoji -->
     <button
       type="button"
-      class="md:hidden flex flex-col justify-between h-14 w-14 p-3 rounded-lg transition-colors duration-300 hover:bg-primary hover:text-white"
+      class="md:hidden flex items-center justify-center h-14 w-14 p-3 rounded-lg text-2xl transition-colors duration-300 hover:bg-primary hover:text-white"
       on:click={() => menuOpen = !menuOpen}
       aria-label="Toggle Menu"
       aria-expanded={menuOpen}
     >
-      <span
-        class="block h-1 w-full bg-primary rounded transition-all duration-300"
-        class:rotate-45={menuOpen}
-        class:translate-y-3={menuOpen}
-      ></span>
-      <span
-        class="block h-1 w-full bg-primary rounded transition-all duration-300"
-        class:opacity-0={menuOpen}
-      ></span>
-      <span
-        class="block h-1 w-full bg-primary rounded transition-all duration-300"
-        class:-rotate-45={menuOpen}
-        class:-translate-y-3={menuOpen}
-      ></span>
+      📱
     </button>
   </div>
 
